@@ -47,16 +47,7 @@ vim.pack.add { gh 'CRAG666/code_runner.nvim' }
 vim.pack.add { gh 'benlubas/molten-nvim' }
 
 -- Use pcall to prevent crashes during the initial background download
-local molten_ok, molten = pcall(require, 'molten')
-if molten_ok then
-  molten.setup {
-    -- Keep it empty for now
-  }
-end
--- Install Jupytext to translate .ipynb JSON into readable Python
-vim.pack.add { gh 'GCBallesteros/jupytext.nvim' }
-require('jupytext').setup {
-  style = 'light', -- This strips away the ugly metadata formatting
-  output_extension = 'py', -- Presents the file to you as a standard Python file
-  force_ft = 'python', -- Forces Neovim to give you Python syntax highlighting
-}
+-- local molten_ok, molten = pcall(require, 'molten')
+-- molten.setup {
+--   -- Keep it empty for now
+-- }
