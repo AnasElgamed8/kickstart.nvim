@@ -77,12 +77,12 @@ it's recommended to track it in version control (see `:help vim.pack-lockfile`).
 
 > [!NOTE]
 > If following the recommended step above (i.e., forking the repo), replace
-> `nvim-lua` with `<your_github_username>` in the commands below
+> `AnasElgamed8` with `<your_github_username>` in the commands below
 
 <details><summary> Linux and Mac </summary>
 
 ```sh
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/AnasElgamed8/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
@@ -92,13 +92,13 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git "%localappdata%\nvim"
+git clone https://github.com/AnasElgamed8/kickstart.nvim.git "%localappdata%\nvim"
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/AnasElgamed8/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim"
 ```
 
 </details>
@@ -158,8 +158,8 @@ examples of adding popularly requested plugins.
     same functionality is available here:
     * [kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)
   * Discussions on this topic can be found here:
-    * [Restructure the configuration](https://github.com/nvim-lua/kickstart.nvim/issues/218)
-    * [Reorganize init.lua into a multi-file setup](https://github.com/nvim-lua/kickstart.nvim/pull/473)
+    * [Restructure the configuration](https://github.com/AnasElgamed8/kickstart.nvim/issues/218)
+    * [Reorganize init.lua into a multi-file setup](https://github.com/AnasElgamed8/kickstart.nvim/pull/473)
 
 ### Install Recipes
 
@@ -278,7 +278,7 @@ pick one of the following methods that are known to deliver fresh neovim version
 They have been picked for their popularity and because they make installing and updating
 neovim to the latest versions easy. You can also find more detail about the
 available methods being discussed
-[here](https://github.com/nvim-lua/kickstart.nvim/issues/1583).
+[here](https://github.com/AnasElgamed8/kickstart.nvim/issues/1583).
 
 
 <details><summary>Bob</summary>
