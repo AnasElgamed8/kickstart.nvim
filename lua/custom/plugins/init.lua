@@ -37,14 +37,31 @@ vim.pack.add { gh 'm4xshen/hardtime.nvim' }
 require('hardtime').setup {
   -- Hardtime is enabled by default.
   -- You can tweak the max repeated keys allowed before it yells at you here.
-  max_count = 3,
+  max_count = 6,
   disable_mouse = true,
 }
+-- Typr
+-- 1. Download the plugins
 vim.pack.add { gh 'nvzone/volt' }
 vim.pack.add { gh 'nvzone/typr' }
+
+-- 2. Manually force the UI framework to wake up first
+vim.cmd.packadd 'volt'
+vim.cmd.packadd 'typr'
+
+-- 3. Now it is safe to setup Typr
+local volt_ok, _ = pcall(require, 'volt')
+local typr_ok, typr = pcall(require, 'typr')
+
+if volt_ok and typr_ok then
+  typr.setup()
+else
+  print 'Typr or Volt failed to load into memory.'
+end
+
 vim.pack.add { gh 'CRAG666/code_runner.nvim' }
 -- Install Molten for interactive Jupyter execution
-vim.pack.add { gh 'benlubas/molten-nvim' }
+--vim.pack.add { gh 'benlubas/molten-nvim' }
 
 -- Use pcall to prevent crashes during the initial background download
 -- local molten_ok, molten = pcall(require, 'molten')
